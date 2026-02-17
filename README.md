@@ -20,25 +20,27 @@ Selenium + PyTest automation framework built using the Page Object Model (POM).
 
 ## Project Structure
 
+```
 qa-web-automation-framework/
 │
-├── pages/ # Page Object Models
-│ ├── login_page.py
-│ └── inventory_page.py
+├── pages/               # Page Object Models
+│   ├── login_page.py
+│   └── inventory_page.py
 │
-├── tests/ # Test cases
-│ ├── test_login.py
-│ └── test_smoke.py
+├── tests/               # Test cases
+│   ├── test_login.py
+│   └── test_smoke.py
 │
-├── utils/ # Framework utilities
-│ └── driver_factory.py
+├── utils/               # Framework utilities
+│   └── driver_factory.py
 │
-├── screenshots/ # Auto-created on test failure
+├── screenshots/         # Auto-created on test failure
 │
-├── conftest.py # PyTest fixtures and hooks
-├── pytest.ini # Test configuration
-├── requirements.txt # Project dependencies
+├── conftest.py          # PyTest fixtures and hooks
+├── pytest.ini           # Test configuration
+├── requirements.txt     # Project dependencies
 └── README.md
+```
 
 ## Design Decisions
 
@@ -52,28 +54,40 @@ qa-web-automation-framework/
 
 ### 1. Clone the repository
 
+```bash
 git clone https://github.com/MauDevFernandes/qa-web-automation-framework.git
 cd qa-web-automation-framework
+```
 
 ### 2. Create virtual environment
 
+```bash
 python -m venv venv
+```
 
 ### 3. Activate virtual environment (Windows)
 
+```bash
 venv\Scripts\activate
+```
 
 ### 4. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ### 5. Run tests
 
+```bash
 pytest
+```
 
 ### 6. Run in headless mode
 
+```bash
 pytest --headless
+```
 
 ## Sample Test Coverage
 
